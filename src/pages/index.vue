@@ -1,17 +1,5 @@
 <template>
-    <header class="header">
-        <div class="container header__container">
-            <a href="/" class="logo">
-                Flight<span class="logo__pool">Pool</span>
-            </a>
-            <nav class="nav header__nav">
-                <a class="nav__link" href="/">Акции</a>
-                <a class="nav__link" href="/search">Поиск</a>
-                <a class="nav__link" href="/booking">Регистрация на рейс</a>
-                <a class="nav__link" href="/profile">Личный кабинет</a>
-            </nav>
-        </div>
-    </header>
+    <App_header />
 
     <section class="calculator">
         <div class="container calculator__container">
@@ -153,27 +141,13 @@
         </div>
     </section>
 
-    <div class="space"></div>
-    <footer class="footer">
-        <div class="footer__container container">
-            <p class="footer__phone">8 (800) 100-10-10</p>
-            <nav class="nav footer__nav">
-                <a class="nav__link" href="http://xxxxxx-m1.wsr.ru">Home</a>
-                <a class="nav__link" href="http://xxxxxx-m1.wsr.ru/login">Login</a>
-                <a class="nav__link" href="http://xxxxxx-m1.wsr.ru/signup">Sign up</a>
-                <a class="nav__link" href="http://xxxxxx-m1.wsr.ru/contact">Contact</a>
-                <a class="nav__link" href="http://xxxxxx-m1.wsr.ru/news">News</a>
-                <a class="nav__link" href="http://xxxxxx-m1.wsr.ru/return">Return</a>
-                <a class="nav__link" href="http://xxxxxx-m1.wsr.ru/feedback">Feedback</a>
-            </nav>
-        </div>
-    </footer>
+    <App_footer />
 </template>
 
 <script setup lang="ts">
+import App_footer from '@/components/app_footer.vue';
+import App_header from '@/components/app_header.vue';
 import Search_section from '@/components/search_section.vue';
-
-
 </script>
 
 <style scoped>
